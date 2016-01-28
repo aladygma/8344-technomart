@@ -1,12 +1,13 @@
-<!--Закончил верстать в 2.30 ночи.
-   За ошибки прошу меня извинить  -->
 <!DOCTYPE html>
+<!--Закончил верстать поздно ночью.
+   За ошибки прошу меня извинить  -->
 <html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="keywords" content="перфоратор, шуруповерт, молоток">
     <meta name="description" content="Интернет-магазин строительных материалов и инструментов для ремонта">
     <title>Каталог товаров – Техномарт</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="header">
@@ -30,7 +31,8 @@
             <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <div class="user-block">
-            <a class="profile" href="#">Равшан Джамшутович</a>
+            <a class="user-profile" href="#">Равшан Джамшутович</a>
+            <a class="user-exit" href="#"></a>
             <!-- Не уверен что эти ссылки нужно делать через список. - Жду твоих замечаний  -->
             <ul class="profile-links">
               <li>Мои заказы</li>
@@ -58,51 +60,56 @@
         </ul>
         <!-- Не уверен что, нужно заворачивать этот заголовок в отдельный блок.  -->
         <div class="catalog-title-section">
-          <h2 class="catalog-title">Перфораторы</h2>
+          <h1 class="catalog-title">Перфораторы</h1>
         </div>
         <div class="catalog-left-section">
           <form class="filter-form" action="#" method="post">
             <div class="filter-title">Фильтр:</div>
-            <div class="filter-price">
-              <p>Цена:</p>
+            <fieldset class="filter-price">
+              <legend class="filter-price-title">Цена:</legend>
               <!-- Не знаю как этот ползунок сверстать -->
               <div class="price-range"></div>
               <input class="price-min" type="text" id="price_min" value="" placeholder="0">
-              <b class="price-separator">&#8211;</b>
+              <span class="price-separator">&#8211;</span>
               <input class="price-max" type="text" id="price_max" value="" placeholder="30000">
-            </div>
-            <ul class="filter-brands">
-              <li>
-                <input type="checkbox" name="check_bosh" id="checkbox_1" checked><label for="checkbox_1">Bosh</label>
-              </li>
-              <li>
-                <input type="checkbox" name="check_bosh" id="checkbox_2"><label for="checkbox_2">Интерскол</label>
-              </li>
-              <li>
-                <input type="checkbox" name="check_bosh" id="checkbox_3" checked><label for="checkbox_3">Makita</label>
-              </li>
-              <li>
-                <input type="checkbox" name="check_bosh" id="checkbox_4"><label for="checkbox_4">Dewalt</label>
-              </li>
-              <li>
-                <input type="checkbox" name="check_bosh" id="checkbox_5"><label for="checkbox_5">Hitachi</label>
-              </li>
-            </ul>
-            <p>Питание:</p>
-            <ul class="filter-power-type">
-              <li>
-                <input type="radio" name="power_type" id="radio_1" value="battery" checked><label for="radio_1">Аккумуляторные</label>
-              </li>
-              <li>
-                <input type="radio" name="power_type" id="radio_2" value="AC"><label for="radio_1">Сетевые</label>
-              </li>
-            </ul>
+            </fieldset>            
+            <fieldset class="filter-brands">
+              <legend class="filter-brands-title">Производители:</legend>
+              <ul class="filter-brands-list">
+                <li>
+                  <input type="checkbox" name="check_bosh" id="checkbox_1" checked><label for="checkbox_1">Bosh</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="check_bosh" id="checkbox_2"><label for="checkbox_2">Интерскол</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="check_bosh" id="checkbox_3" checked><label for="checkbox_3">Makita</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="check_bosh" id="checkbox_4"><label for="checkbox_4">Dewalt</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="check_bosh" id="checkbox_5"><label for="checkbox_5">Hitachi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-power">
+              <legend class="filter-power-title">Питание:</legend>
+              <ul class="filter-power-list">
+                <li>
+                  <input type="radio" name="power_type" id="radio_1" value="battery" checked><label for="radio_1">Аккумуляторные</label>
+                </li>
+                <li>
+                  <input type="radio" name="power_type" id="radio_2" value="AC"><label for="radio_1">Сетевые</label>
+                </li>
+              </ul>
+            </fieldset>
             <button type="submit" value="filter_show">Показать</button>
           </form>
         </div>
         <div class="catalog-right-section">
           <div class="sorting">
-            <b>Сортировка:</b>
+            <span>Сортировка:</span>
             <!-- Может нужно было списком сделать? -->
             <a class="sorting-by" href="#">По цене</a>
             <a class="sorting-by" href="#">По типу</a>
@@ -112,72 +119,90 @@
           </div>
           <ul class="catalog-items">
             <li>
-              <img src="http://placehold.it/220x170" alt="Placeholder" width="220" height="170">
+              <img src="img/bfg9000_small.jpg" width="184" height="164" alt="BFG9000">
               <!-- Андрей подскажи! Я не уверен что выбрал здесь правильные элементы.-->
-              <h2 class="item-title">Перфоратор BOSH</h2>
-              <b class="item-model">BFG 9000</b>
-              <b class="item-old-price">32500</b>
+              <a class="item-title">
+                <span class="item-name">Перфоратор BOSH</span>
+                <span class="item-model">BFG 3000</span>
+              </a>
+              <span class="item-old-price">22500</span>
+              <div class="item-price">15500</div>
+            </li>
+            <li>
+              <img src="img/bfg6000_small.jpg" width="184" height="164" alt="BFG9000">              
+              <a class="item-title">
+                <span class="item-name">Перфоратор BOSH</span>
+                <span class="item-model">BFG 6000</span>
+              </a>
+              <span class="item-old-price">30500</span>
               <div class="item-price">25500</div>
             </li>
             <li>
-              <img src="http://placehold.it/220x170" alt="Placeholder" width="220" height="170">
-              <h2 class="item-title">Перфоратор BOSH</h2>
-              <b class="item-model">BFG 6000</b>
-              <b class="item-old-price">30500</b>
-              <div class="item-price"></div>
+              <img src="img/bfg2000_small.jpg" width="184" height="164" alt="BFG9000">              
+              <a class="item-title">
+                <span class="item-name">Перфоратор BOSH</span>
+                <span class="item-model">BFG 2000</span>
+              </a>
+              <span class="item-old-price old-price-hidden">32500</span>
+              <div class="item-price">15500</div>
             </li>
             <li>
-              <img src="http://placehold.it/220x170" alt="Placeholder" width="220" height="170">
-              <h2 class="item-title">Перфоратор BOSH</h2>
-              <b class="item-model">BFG 3000</b>
-              <b class="item-old-price">22500</b>
-              <div class="item-price"></div>
+              <img src="img/bfg9000_small.jpg" width="184" height="164" alt="BFG9000">              
+              <a class="item-title">
+                <span class="item-name">Перфоратор BOSH</span>
+                <span class="item-model">BFG 3000</span>
+              </a>
+              <span class="item-old-price">22500</span>
+              <div class="item-price">15500</div>
             </li>
             <li>
-              <img src="http://placehold.it/220x170" alt="Placeholder" width="220" height="170">
-              <h2 class="item-title">Перфоратор BOSH</h2>
-              <b class="item-model">BFG 9000</b>
-              <b class="item-old-price">32500</b>
+              <img src="img/bfg6000_small.jpg" width="184" height="164" alt="BFG9000">              
+              <a class="item-title">
+                <span class="item-name">Перфоратор BOSH</span>
+                <span class="item-model">BFG 6000</span>
+              </a>
+              <span class="item-old-price">30500</span>
               <div class="item-price">25500</div>
             </li>
             <li>
-              <img src="http://placehold.it/220x170" alt="Placeholder" width="220" height="170">
-              <h2 class="item-title">Перфоратор BOSH</h2>
-              <b class="item-model">BFG 6000</b>
-              <b class="item-old-price">30500</b>
-              <div class="item-price"></div>
+              <img src="img/bfg2000_small.jpg" width="184" height="164" alt="BFG9000">              
+              <a class="item-title">
+                <span class="item-name">Перфоратор BOSH</span>
+                <span class="item-model">BFG 2000</span>
+              </a>
+              <span class="item-old-price old-price-hidden">32500</span>
+              <div class="item-price">15500</div>
             </li>
             <li>
-              <img src="http://placehold.it/220x170" alt="Placeholder" width="220" height="170">
-              <h2 class="item-title">Перфоратор BOSH</h2>
-              <b class="item-model">BFG 3000</b>
-              <b class="item-old-price">22500</b>
-              <div class="item-price"></div>
+              <img src="img/bfg9000_small.jpg" width="184" height="164" alt="BFG9000">           
+              <a class="item-title">
+                <span class="item-name">Перфоратор BOSH</span>
+                <span class="item-model">BFG 3000</span>
+              </a>
+              <span class="item-old-price">22500</span>
+              <div class="item-price">15500</div>
             </li>
             <li>
-              <img src="http://placehold.it/220x170" alt="Placeholder" width="220" height="170">
-              <h2 class="item-title">Перфоратор BOSH</h2>
-              <b class="item-model">BFG 9000</b>
-              <b class="item-old-price">32500</b>
+              <img src="img/bfg6000_small.jpg" width="184" height="164" alt="BFG9000">              
+              <a class="item-title">
+                <span class="item-name">Перфоратор BOSH</span>
+                <span class="item-model">BFG 6000</span>
+              </a>
+              <span class="item-old-price">30500</span>
               <div class="item-price">25500</div>
             </li>
             <li>
-              <img src="http://placehold.it/220x170" alt="Placeholder" width="220" height="170">
-              <h2 class="item-title">Перфоратор BOSH</h2>
-              <b class="item-model">BFG 6000</b>
-              <b class="item-old-price">30500</b>
-              <div class="item-price"></div>
-            </li>
-            <li>
-              <img src="http://placehold.it/220x170" alt="Placeholder" width="220" height="170">
-              <h2 class="item-title">Перфоратор BOSH</h2>
-              <b class="item-model">BFG 3000</b>
-              <b class="item-old-price">22500</b>
-              <div class="item-price"></div>
+              <img src="img/bfg2000_small.jpg" width="184" height="164" alt="BFG9000">              
+              <a class="item-title">
+                <span class="item-name">Перфоратор BOSH</span>
+                <span class="item-model">BFG 2000</span>
+              </a>
+              <span class="item-old-price old-price-hidden">32500</span>
+              <div class="item-price">15500</div>
             </li>
           </ul>
           <ul class="pagination">
-            <li><a class="btn-page" href="#">1</a></li>
+            <li class="pagination-current">1</li>
             <li><a class="btn-page" href="#">2</a></li>
             <li><a class="btn-page" href="#">3</a></li>
             <li><a class="btn-page" href="#">Следующая</a></li>

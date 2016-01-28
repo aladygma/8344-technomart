@@ -1,0 +1,249 @@
+<!--Закончил верстать в 2.30 ночи.
+   За ошибки прошу меня извинить  -->
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="перфоратор, шуруповерт, молоток">
+    <meta name="description" content="Интернет-магазин строительных материалов и инструментов для ремонта">
+    <title>Каталог товаров – Техномарт</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="top-menu">
+        <!-- div class="center" – блок-центровщик контента  -->
+        <div class="center">
+          <div class="header-logo">Техномарт</div>
+          <form class="search-form" action="#" method="get">
+            <input class="search-input" type="text" name="search" id="search" placeholder="Поиск">
+          </form>
+          <a class="top-menu-bookmarks" href="#">Закладки</a>
+          <a class="top-menu-basket" href="#">Корзина</a>
+          <a class="top-menu-order" href="#">Оформить заказ</a>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="center">
+          <p class="site-description">Интернет магазин строительных материалов и инструментов для ремонта</p>
+          <div class="header-contacts">
+            <div class="header-phone">+7 (812) 555-05-55)</div>
+            <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </div>
+          <div class="user-block">
+            <a class="profile" href="#">Равшан Джамшутович</a>
+            <!-- Не уверен что эти ссылки нужно делать через список. - Жду твоих замечаний  -->
+            <ul class="profile-links">
+              <li>Мои заказы</li>
+              <li>Личный кабинет</li>
+            </ul>
+          </div>
+          <ul class="header-navigation">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="catalog-content">
+      <div class="center">
+        <ul class="bread-crumbs">
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Инструмент</a></li>
+          <li><a href="#">Перфораторы</a></li>
+        </ul>
+        <!-- Не уверен что, нужно заворачивать этот заголовок в отдельный блок.  -->
+        <div class="catalog-title-section">
+          <h2 class="catalog-title">Перфораторы</h2>
+        </div>
+        <div class="catalog-left-section">
+          <form class="filter-form" action="#" method="post">
+            <div class="filter-title">Фильтр:</div>
+            <div class="filter-price">
+              <p>Цена:</p>
+              <!-- Не знаю как этот ползунок сверстать -->
+              <div class="price-range"></div>
+              <input class="price-min" type="text" id="price_min" value="" placeholder="0">
+              <b class="price-separator">&#8211;</b>
+              <input class="price-max" type="text" id="price_max" value="" placeholder="30000">
+            </div>
+            <ul class="filter-brands">
+              <li>
+                <input type="checkbox" name="check_bosh" id="checkbox_1" checked><label for="checkbox_1">Bosh</label>
+              </li>
+              <li>
+                <input type="checkbox" name="check_bosh" id="checkbox_2"><label for="checkbox_2">Интерскол</label>
+              </li>
+              <li>
+                <input type="checkbox" name="check_bosh" id="checkbox_3" checked><label for="checkbox_3">Makita</label>
+              </li>
+              <li>
+                <input type="checkbox" name="check_bosh" id="checkbox_4"><label for="checkbox_4">Dewalt</label>
+              </li>
+              <li>
+                <input type="checkbox" name="check_bosh" id="checkbox_5"><label for="checkbox_5">Hitachi</label>
+              </li>
+            </ul>
+            <p>Питание:</p>
+            <ul class="filter-power-type">
+              <li>
+                <input type="radio" name="power_type" id="radio_1" value="battery" checked><label for="radio_1">Аккумуляторные</label>
+              </li>
+              <li>
+                <input type="radio" name="power_type" id="radio_2" value="AC"><label for="radio_1">Сетевые</label>
+              </li>
+            </ul>
+            <button type="submit" value="filter_show">Показать</button>
+          </form>
+        </div>
+        <div class="catalog-right-section">
+          <div class="sorting">
+            <b>Сортировка:</b>
+            <!-- Может нужно было списком сделать? -->
+            <a class="sorting-by" href="#">По цене</a>
+            <a class="sorting-by" href="#">По типу</a>
+            <a class="sorting-by" href="#">По функционалу</a>
+            <a class="sorting-by narrow" href="#">&#9650;</a>
+            <a class="sorting-by narrow" href="#">&#9660;</a>
+          </div>
+          <ul class="catalog-items">
+            <li>
+              <img src="http://placehold.it/220x170" alt="Placeholder" width="220" height="170">
+              <!-- Андрей подскажи! Я не уверен что выбрал здесь правильные элементы.-->
+              <h2 class="item-title">Перфоратор BOSH</h2>
+              <b class="item-model">BFG 9000</b>
+              <b class="item-old-price">32500</b>
+              <div class="item-price">25500</div>
+            </li>
+            <li>
+              <img src="http://placehold.it/220x170" alt="Placeholder" width="220" height="170">
+              <h2 class="item-title">Перфоратор BOSH</h2>
+              <b class="item-model">BFG 6000</b>
+              <b class="item-old-price">30500</b>
+              <div class="item-price"></div>
+            </li>
+            <li>
+              <img src="http://placehold.it/220x170" alt="Placeholder" width="220" height="170">
+              <h2 class="item-title">Перфоратор BOSH</h2>
+              <b class="item-model">BFG 3000</b>
+              <b class="item-old-price">22500</b>
+              <div class="item-price"></div>
+            </li>
+            <li>
+              <img src="http://placehold.it/220x170" alt="Placeholder" width="220" height="170">
+              <h2 class="item-title">Перфоратор BOSH</h2>
+              <b class="item-model">BFG 9000</b>
+              <b class="item-old-price">32500</b>
+              <div class="item-price">25500</div>
+            </li>
+            <li>
+              <img src="http://placehold.it/220x170" alt="Placeholder" width="220" height="170">
+              <h2 class="item-title">Перфоратор BOSH</h2>
+              <b class="item-model">BFG 6000</b>
+              <b class="item-old-price">30500</b>
+              <div class="item-price"></div>
+            </li>
+            <li>
+              <img src="http://placehold.it/220x170" alt="Placeholder" width="220" height="170">
+              <h2 class="item-title">Перфоратор BOSH</h2>
+              <b class="item-model">BFG 3000</b>
+              <b class="item-old-price">22500</b>
+              <div class="item-price"></div>
+            </li>
+            <li>
+              <img src="http://placehold.it/220x170" alt="Placeholder" width="220" height="170">
+              <h2 class="item-title">Перфоратор BOSH</h2>
+              <b class="item-model">BFG 9000</b>
+              <b class="item-old-price">32500</b>
+              <div class="item-price">25500</div>
+            </li>
+            <li>
+              <img src="http://placehold.it/220x170" alt="Placeholder" width="220" height="170">
+              <h2 class="item-title">Перфоратор BOSH</h2>
+              <b class="item-model">BFG 6000</b>
+              <b class="item-old-price">30500</b>
+              <div class="item-price"></div>
+            </li>
+            <li>
+              <img src="http://placehold.it/220x170" alt="Placeholder" width="220" height="170">
+              <h2 class="item-title">Перфоратор BOSH</h2>
+              <b class="item-model">BFG 3000</b>
+              <b class="item-old-price">22500</b>
+              <div class="item-price"></div>
+            </li>
+          </ul>
+          <ul class="pagination">
+            <li><a class="btn-page" href="#">1</a></li>
+            <li><a class="btn-page" href="#">2</a></li>
+            <li><a class="btn-page" href="#">3</a></li>
+            <li><a class="btn-page" href="#">Следующая</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="information">
+      <div class="center">
+        <h2 class="information-section-title">Пара слов о перфораторах</h2>
+        <p class="information-section-description">Перфоратор — универсальный строительный инструмент.
+          Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
+          шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»:
+          в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="center">
+      <!-- Вот здесь мне не понятно – нужно ли логотип и адрес под ним в отдельный блок?
+        Сверстаю по своему, а ты потом пожалуйста подскажи -->
+        <div class="footer-left-section">
+          <div class="footer-logo">Техномарт</div>
+          <p class="footer-adress">
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            +7 (812) 555-05-55
+          </p>
+        </div>
+        <div class="footer-right-section">
+          <ul class="footer-navigation">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="footer-menu">
+            <li><a href="#">Материалы</a></li>
+            <li><a href="#">Техника</a></li>
+            <li><a href="#">Инструмент</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-menu">
+        <div class="center">
+          <div class="copyright">
+            &copy; 2010–2016 Компания &laquo;Техномарт&raquo;<br>
+            Все права защищены
+          </div>
+          <div class="footer-social">
+            <a class="social-btn social-btn-vk" href="#">VK</a>
+            <a class="social-btn social-btn-vk" href="#">FaceBook</a>
+            <a class="social-btn social-btn-vk" href="#">Instagram</a>
+          </div>
+          <div class="footer-feedback">
+            <p>Обратная связь</p>
+            <a class="feedback" href="#">mail@htmlacademy.ru</a>
+          </div>
+          <div class="footer-feedback">
+            <p>Разработано</p>
+            <a class="feedback" href="#">htmlacademy.ru</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -21,3 +21,11 @@ h2 {
   font-family: "PTSans", "Arial", sans-serif;
   color: #000000;
 }
+
+.hidden {
+  display: none;
+}
+
+.hollow {
+  visibility: hidden;
+}

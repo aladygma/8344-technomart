@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<!--Закончил верстать поздно ночью.
-   За ошибки прошу меня извинить  -->
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -16,10 +14,13 @@
         <div class="center">
           <div class="header-logo">Техномарт</div>
           <form class="search-form" action="#" method="get">
-            <input class="search-input" type="text" name="search" id="search" placeholder="Поиск">
-          </form>
-          <a class="top-menu-bookmarks" href="#">Закладки</a>
-          <a class="top-menu-basket" href="#">Корзина</a>
+          <!-- Добавил кнопку для поиска -->
+          <!-- Добавил span-ы к корзине и закладкам -->
+            <button class="search-button" type="submit">Иконка</button>
+            <input class="search-input" type="search" value="" name="search-request" id="search" placeholder="Поиск">
+          </form>          
+          <a class="top-menu-bookmarks" href="#">Закладки: <span class="bookmarks-count">0</span></a>
+          <a class="top-menu-cart" href="#">Корзина: <span class="cart-items-count">10</span></a>
           <a class="top-menu-order" href="#">Оформить заказ</a>
         </div>
       </div>
@@ -35,8 +36,8 @@
             <a class="user-exit" href="#"></a>
             <!-- Не уверен что эти ссылки нужно делать через список. - Жду твоих замечаний  -->
             <ul class="profile-links">
-              <li>Мои заказы</li>
-              <li>Личный кабинет</li>
+              <li><a href="#">Мои заказы</a></li>
+              <li><a href="#">Личный кабинет</a></li>
             </ul>
           </div>
           <ul class="header-navigation">
@@ -119,86 +120,127 @@
           </div>
           <ul class="catalog-items">
             <li>
-              <img src="img/bfg9000_small.jpg" width="184" height="164" alt="BFG9000">
-              <!-- Андрей подскажи! Я не уверен что выбрал здесь правильные элементы.-->
-              <a class="item-title">
-                <span class="item-name">Перфоратор BOSH</span>
-                <span class="item-model">BFG 3000</span>
-              </a>
-              <span class="item-old-price">22500</span>
-              <div class="item-price">15500</div>
-            </li>
-            <li>
-              <img src="img/bfg6000_small.jpg" width="184" height="164" alt="BFG9000">              
-              <a class="item-title">
-                <span class="item-name">Перфоратор BOSH</span>
-                <span class="item-model">BFG 6000</span>
-              </a>
-              <span class="item-old-price">30500</span>
+              <div class="item-image">
+                <img src="img/bfg6000_small.jpg" height="128" width="144" alt="BFG3000">
+              </div>             
+              <div class="item-name">Перфоратор BOSH</div>
+              <div class="item-model">BFG 6000</div>              
+              <div class="item-old-price">30500</div>
               <div class="item-price">25500</div>
+              <div class="item-hover">
+                <a class="item-hover-buy" href="#">Купить</a>
+                <a class="item-hover-bookmarks" href="#">В закладки</a>
+              </div>
             </li>
             <li>
-              <img src="img/bfg2000_small.jpg" width="184" height="164" alt="BFG9000">              
-              <a class="item-title">
-                <span class="item-name">Перфоратор BOSH</span>
-                <span class="item-model">BFG 2000</span>
-              </a>
-              <span class="item-old-price old-price-hidden">32500</span>
+              <div class="item-image">
+                <img src="img/bfg3000_small.jpg" height="112" width="127" alt="BFG3000">
+              </div>             
+              <div class="item-name">Перфоратор BOSH</div>
+              <div class="item-model">BFG 3000</div>              
+              <div class="item-old-price">22500</div>
               <div class="item-price">15500</div>
+              <div class="item-hover">
+                <a class="item-hover-buy" href="#">Купить</a>
+                <a class="item-hover-bookmarks" href="#">В закладки</a>
+              </div>
             </li>
             <li>
-              <img src="img/bfg9000_small.jpg" width="184" height="164" alt="BFG9000">              
-              <a class="item-title">
-                <span class="item-name">Перфоратор BOSH</span>
-                <span class="item-model">BFG 3000</span>
-              </a>
-              <span class="item-old-price">22500</span>
-              <div class="item-price">15500</div>
+              <div class="item-image">                
+                <img src="img/bfg2000_small.jpg" height="112" width="127" alt="BFG2000">
+              </div>
+              <div class="new-tag">
+                <img src="img/tag_new.png" height="59" width="60" alt="Новое">
+              </div>
+              <div class="item-name">Перфоратор BOSH</div>
+              <div class="item-model">BFG 2000</div>              
+              <div class="item-old-price">15500</div>
+              <div class="item-price"></div>              
+              <div class="item-hover">
+                <a class="item-hover-buy" href="#">Купить</a>
+                <a class="item-hover-bookmarks" href="#">В закладки</a>
+              </div>
             </li>
             <li>
-              <img src="img/bfg6000_small.jpg" width="184" height="164" alt="BFG9000">              
-              <a class="item-title">
-                <span class="item-name">Перфоратор BOSH</span>
-                <span class="item-model">BFG 6000</span>
-              </a>
-              <span class="item-old-price">30500</span>
+              <div class="item-image">
+                <img src="img/bfg6000_small.jpg" height="128" width="144" alt="BFG3000">
+              </div>                         
+              <div class="item-name">Перфоратор BOSH</div>
+              <div class="item-model">BFG 6000</div>              
+              <div class="item-old-price">30500</div>
               <div class="item-price">25500</div>
+              <div class="item-hover">
+                <a class="item-hover-buy" href="#">Купить</a>
+                <a class="item-hover-bookmarks" href="#">В закладки</a>
+              </div>
             </li>
             <li>
-              <img src="img/bfg2000_small.jpg" width="184" height="164" alt="BFG9000">              
-              <a class="item-title">
-                <span class="item-name">Перфоратор BOSH</span>
-                <span class="item-model">BFG 2000</span>
-              </a>
-              <span class="item-old-price old-price-hidden">32500</span>
+              <div class="item-image">
+                <img src="img/bfg3000_small.jpg" height="112" width="127" alt="BFG3000">
+              </div>
+              <div class="new-tag">
+                <img src="img/tag_new.png" height="59" width="60" alt="Новое">
+              </div>             
+              <div class="item-name">Перфоратор BOSH</div>
+              <div class="item-model">BFG 3000</div>              
+              <div class="item-old-price">22500</div>
               <div class="item-price">15500</div>
+              <div class="item-hover">
+                <a class="item-hover-buy" href="#">Купить</a>
+                <a class="item-hover-bookmarks" href="#">В закладки</a>
+              </div>
             </li>
             <li>
-              <img src="img/bfg9000_small.jpg" width="184" height="164" alt="BFG9000">           
-              <a class="item-title">
-                <span class="item-name">Перфоратор BOSH</span>
-                <span class="item-model">BFG 3000</span>
-              </a>
-              <span class="item-old-price">22500</span>
-              <div class="item-price">15500</div>
+              <div class="item-image">                
+                <img src="img/bfg2000_small.jpg" height="112" width="127" alt="BFG2000">
+              </div>             
+              <div class="item-name">Перфоратор BOSH</div>
+              <div class="item-model">BFG 2000</div>              
+              <div class="item-old-price">15500</div>
+              <div class="item-price">12500</div>              
+              <div class="item-hover">
+                <a class="item-hover-buy" href="#">Купить</a>
+                <a class="item-hover-bookmarks" href="#">В закладки</a>
+              </div>
             </li>
             <li>
-              <img src="img/bfg6000_small.jpg" width="184" height="164" alt="BFG9000">              
-              <a class="item-title">
-                <span class="item-name">Перфоратор BOSH</span>
-                <span class="item-model">BFG 6000</span>
-              </a>
-              <span class="item-old-price">30500</span>
+              <div class="item-image">
+                <img src="img/bfg6000_small.jpg" height="128" width="144" alt="BFG3000">
+              </div>             
+              <div class="item-name">Перфоратор BOSH</div>
+              <div class="item-model">BFG 6000</div>              
+              <div class="item-old-price">30500</div>
               <div class="item-price">25500</div>
+              <div class="item-hover">
+                <a class="item-hover-buy" href="#">Купить</a>
+                <a class="item-hover-bookmarks" href="#">В закладки</a>
+              </div>
             </li>
             <li>
-              <img src="img/bfg2000_small.jpg" width="184" height="164" alt="BFG9000">              
-              <a class="item-title">
-                <span class="item-name">Перфоратор BOSH</span>
-                <span class="item-model">BFG 2000</span>
-              </a>
-              <span class="item-old-price old-price-hidden">32500</span>
+              <div class="item-image">
+                <img src="img/bfg3000_small.jpg" height="112" width="127" alt="BFG3000">
+              </div>             
+              <div class="item-name">Перфоратор BOSH</div>
+              <div class="item-model">BFG 3000</div>              
+              <div class="item-old-price">22500</div>
               <div class="item-price">15500</div>
+              <div class="item-hover">
+                <a class="item-hover-buy" href="#">Купить</a>
+                <a class="item-hover-bookmarks" href="#">В закладки</a>
+              </div>
+            </li>
+            <li>
+              <div class="item-image">                
+                <img src="img/bfg2000_small.jpg" height="112" width="127" alt="BFG2000">
+              </div>              
+              <div class="item-name">Перфоратор BOSH</div>
+              <div class="item-model">BFG 2000</div>              
+              <div class="item-old-price">15500</div>
+              <div class="item-price">12500</div>              
+              <div class="item-hover">
+                <a class="item-hover-buy" href="#">Купить</a>
+                <a class="item-hover-bookmarks" href="#">В закладки</a>
+              </div>
             </li>
           </ul>
           <ul class="pagination">

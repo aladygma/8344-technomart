@@ -198,9 +198,7 @@ a {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  padding: 10px 0;
-  padding-left: 50px;
-  padding-right: 10px;
+  padding: 10px 10px 10px 50px;
   font-size: 17px;
   line-height: 22px;
   color: #ffffff;
@@ -241,8 +239,7 @@ a {
   display: block;
   float: left;
   width: 120px;
-  padding: 10px 0;
-  padding-right: 30px;
+  padding: 10px 30px 10px 0;
   font-size: 17px;
   line-height: 22px;
   text-align: right;
@@ -317,8 +314,7 @@ a {
   position: relative;
   display: block;
   width: 194px;
-  padding: 9px 0;
-  padding-left: 70px;
+  padding: 9px 0 9px 70px;
   font-size: 21px;
   line-height: 21px;
   color: #e9292a;
@@ -391,8 +387,12 @@ a {
 }
 
 .user-block-btn:active {
-  color: #000000;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
+
+}
+
+.user-block-btn:active::before {
+  background-position: -10px -295px;
 }
 
 .navigation {
@@ -458,6 +458,10 @@ a {
   position: absolute;
   top: 0;
   right: 0;
+  width: 60px;
+  height: 60px;
+  font-size: 0;
+  background: url("../img/new-flag.png") no-repeat;
 }
 
 .offer-section {
@@ -467,10 +471,8 @@ a {
 }
 
 .offer-title {
-  margin: 0;
-  margin-bottom: 12px;
-  padding: 0;
-  padding-left: 23px;
+  margin: 0 0 12px 0;
+  padding: 0 0 0 23px;
   font-size: 24px;
   font-weight: bold;
   color: #ffffff;
@@ -501,6 +503,7 @@ a {
 .offer-image {
   float: right;
   width: 140px;
+  height: 123px;
 }
 
 .offer-image img {
@@ -512,12 +515,24 @@ a {
   margin-left: 0;
 }
 
+.offer-1 .offer-image {
+  background: url("../img/offer-materials.png") no-repeat;
+}
+
 .offer-2 {
   background-color: #4aafde;
 }
 
+.offer-2 .offer-image {
+  background: url("../img/offer-instrument.png") no-repeat;
+}
+
 .offer-3 {
   background-color: #cc79d1;
+}
+
+.offer-3 .offer-image {
+  background: url("../img/offer-tech.png") no-repeat;
 }
 
 .offer-4 {
@@ -525,8 +540,16 @@ a {
   margin-bottom: 20px;
 }
 
+.offer-4 .offer-image {
+  background: url("../img/offer-discount.png") no-repeat;
+}
+
 .offer-5 {
   background-color: #f6b22d;
+}
+
+.offer-5 .offer-image {
+  background: url("../img/offer-delivery.png") no-repeat;
 }
 
 .slider {
@@ -578,8 +601,7 @@ a {
 
 .index-popular-title {
   float: left;
-  margin: 0;
-  margin-top: 4px;
+  margin: 4px 0 0 0;
   padding: 0;
   text-transform: uppercase;
 }
@@ -605,8 +627,7 @@ a {
   display: inline-block;
   width: 218px;
   padding-bottom: 20px;
-  margin-left: 20px;
-  margin-bottom: 20px;
+  margin: 0 0 20px 20px;
   vertical-align: top;
   font-size: 18px;
   line-height: 20px;
@@ -616,6 +637,10 @@ a {
 
 .catalog-item:hover {
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.catalog-item:hover .catalog-item-image {
+  visibility: hidden
 }
 
 .catalog-item:hover .catalog-actions {
@@ -635,8 +660,7 @@ a {
 
 .item-action {
   display: block;
-  margin: 0 auto;
-  margin-bottom: 7px;
+  margin: 0 auto 7px;
   width: 129px;
   padding: 8px 0;
   font-size: 14px;
@@ -656,8 +680,9 @@ a {
 
 .item-action-buy:hover {
   background-color: #5fbb2d;
-  border: 3px solid #5fbb2d;
-  border-bottom: 3px solid #367315;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #5fbb2d #5fbb2d #367315 #5fbb2d;
 }
 
 .item-action-buy:active {
@@ -796,9 +821,8 @@ a {
 }
 
 .services-header h3 {
-  margin: 0;
+  margin: 0 0 35px 0;
   padding: 0;
-  margin-bottom: 35px;
   font-size: 30px;
   line-height: 30px;
 }
@@ -821,8 +845,7 @@ a {
   position: relative;
   float: left;
   width: 200px;
-  margin: 0;
-  margin-right: 80px;
+  margin: 0 80px 0 0;
   padding: 0;
   list-style-type: none;
 }
@@ -873,15 +896,13 @@ a {
 }
 
 .service-info h2 {
-  margin: 0;
-  margin-bottom: 34px;
+  margin: 0 0 34px 0;
   padding: 0;
 }
 
 .service-info p {
   width: 380px;
-  margin: 0;
-  margin-bottom: 35px;
+  margin: 0 0 35px 0;
   padding: 0;
   font-size: 13px;
   line-height: 24px;
@@ -905,14 +926,12 @@ a {
 }
 
 .info h3 {
-  margin: 0;
-  margin-bottom: 34px;
+  margin: 0 0 34px 0;
   padding: 0;
 }
 
 .info p{
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
   padding: 0;
   font-size: 13px;
   line-height: 24px;
@@ -939,11 +958,10 @@ a {
 }
 
 .info-section-list li::before {
+  content: "";
   position: absolute;
   left: 0;
   top: 8px;
-  z-index:
-  content: "";
   width: 25px;
   height: 2px;
   background-color: #fb565a;

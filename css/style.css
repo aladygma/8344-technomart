@@ -2,8 +2,7 @@
 /*font-family: "Cuprum", "Verdana",  sans-serif;*/
 
 .sprite {
-  background-image: url("../img/sprites.png");
-  background-repeat: no-repeat;
+  background-image: url("../img/sprites.png") no-repeat;
   display: block;
 }
 
@@ -1140,4 +1139,118 @@ a {
 .bottom-contacts-section a:active {
   color: #ee3643;
   text-decoration: none;
+}
+
+.write-us-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  width: 620px;
+  padding-top: 40px;
+  border-top: 7px solid #ee3643;
+  background-color: #ffffff;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.7) ;
+}
+
+.write-us-top-section {
+  margin-bottom: 37px;
+  padding: 0 80px;
+}
+
+.write-us-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.write-us-section-left {
+  width: 220px;
+  float: left;
+}
+
+.write-us-section-right {
+  width: 220px;
+  float: right;
+}
+
+.write-us-form input[type="text"] {
+  width: 188px;
+  margin-bottom: 20px;
+  padding: 8px 14px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #999999;
+  font-family: "PT Sans", "Verdana",  sans-serif;
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+}
+
+.write-us-message {
+  width: 428px;
+  padding: 8px 14px;
+  font-family: "PT Sans", "Verdana",  sans-serif;
+  color: #999999;
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+}
+
+.write-us-bottom-section {
+  padding: 37px 80px;
+  background-color: #f1f1f1;
+}
+
+.write-us-send-button {
+  color: #ffffff;
+  display: block;
+  width: 100%;
+  border: none;
+}
+
+.close-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 27px;
+  height: 27px;
+  font-size: 0;
+}
+
+.close-button:hover {
+  cursor: pointer;
+}
+
+.close-button::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  width: 27px;
+  height: 5px;
+  background-color: #ee3643;
+  transform: rotate(-45deg);
+}
+
+.close-button::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  width: 27px;
+  height: 5px;
+  background-color: #ee3643;
+  transform: rotate(45deg);
+}
+
+.big-map {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  width: 940px;
+  height: 446px;
+  background-color: #ffffff;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 16px 8px rgba(35, 31, 32, 0.5);
 }

@@ -18,12 +18,8 @@
       <div class="top-section-left clearfix">
         <div class="logo top-logo">Техномарт</div>
           <form class="search-form" method="get" action="#">
-            <!-- Привет Андрей! -->
-            <!-- Не могу понять как сделать иконку поиска полупрозрачной -->
-            <!-- Я когда делал спрайт с иконками, забыл добавить в него -->
-            <!-- Одно из ее состояний. Спрайт переделывать не хочу -->
-            <!-- А сейчас прозрачность задается только вместе со всем элементом  -->
-            <input class="search-input" type="text" name="search" id="search-id" placeholder="Поиск">
+            <input class="search-input" type="text" name="search" id="id-search" placeholder="Поиск:">
+            <label class="search-label" for="id-search">Поиск</label>
           </form>
       </div>
       <!-- Top-section-right -->
@@ -38,7 +34,7 @@
   <div class="header">
     <div class="container">
       <div class="header-section clearfix">
-        <p class="shop-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <p class="shop-description">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
         <div class="header-contacts">
           <span class="header-phone">+7 (812) 555-05-55</span>
           <span class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
@@ -75,7 +71,6 @@
             <h2 class="offer-title">Материалы</h2>
             <a class="offer-link" href="#">На любой вкус</a>
           </div>
-          <div class="offer-image"></div>
         </div>
         <!-- Offer -->
         <div class="offer offer-2 clearfix">
@@ -83,7 +78,6 @@
             <h2 class="offer-title">Инструмент</h2>
             <a class="offer-link" href="#">На все случаи</a>
           </div>
-          <div class="offer-image"></div>
         </div>
         <!-- Offer -->
         <div class="offer offer-3 clearfix">
@@ -91,7 +85,6 @@
             <h2 class="offer-title">Техника</h2>
             <a class="offer-link" href="#">Для стройки</a>
           </div>
-          <div class="offer-image"></div>
         </div>
       </div>
       <!-- Offers-section -->
@@ -110,7 +103,6 @@
               <h2 class="offer-title">Скидки 50%</h2>
               <a class="offer-link" href="#">На 350 товаров</a>
             </div>
-            <div class="offer-image"></div>
           </div>
           <!-- Offer -->
           <div class="offer offer-5 clearfix">
@@ -118,7 +110,6 @@
               <h2 class="offer-title">Доставка</h2>
               <a class="offer-link" href="#">Бесплатно</a>
             </div>
-            <div class="offer-image"></div>
           </div>
         </div>
       </div>
@@ -175,6 +166,7 @@
             </li>
             <!-- Item -->
             <li class="catalog-item">
+              <div class="new-flag catalog-new-flag">Новинка</div>
               <div class="catalog-actions">
                   <a class="item-action item-action-buy" href="#">Купить</a>
                   <a class="item-action item-action-bookmark" href="#">В закладки</a>
@@ -186,7 +178,6 @@
               <span class="catalog-item-model">BFG 2000</span>
               <span class="catalog-item-discount">10500 Р.</span>
               <div class="catalog-item-price">12500 Р.</div>
-              <div class="new-flag catalog-new-flag">Новинка</div>
             </li>
           </ul>
         </div>
@@ -194,8 +185,8 @@
       <!-- Index-popular -->
       <div class="index-popular">
         <div class="index-popular-header clearfix">
-          <h2 class="index-popular-title">Популярные товары</h2>
-          <a href="#" class="btn popular-header-btn">Все популярные производители</a>
+          <h2 class="index-popular-title">Популярные производители</h2>
+          <a href="#" class="btn popular-header-btn">Все производители</a>
         </div>
         <div class="items-row">
           <ul class="index-popular-brands">
@@ -217,28 +208,25 @@
     <div class="container">
       <div class="services-header clearfix">
         <h3>Сервисы</h3>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами!
+        <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
       </div>
       <!-- Services-section -->
       <div class="services-section clearfix">
         <ul class="services-menu">
-        <!-- Нет времени пересматривать лекцию -->
-        <!-- Точно не помню как правильно делать активный пункт меню -->
-        <!-- Зделал по своему -->
-          <li class="active-service" id="service-menu-item-1">Доставка</li>
+          <li><a href="#" id="service-menu-item-1">Доставка</a></li>
           <li><a href="#" id="service-menu-item-2">Гарантия</a></li>
           <li><a href="#" id="service-menu-item-3">Кредит</a></li>
         </ul>
-        <div class="service-info service-1-info hidden">
+        <div class="service-info service-1-info">
           <h2>Доставка</h2>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>
+          <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br>
           Ведь мы неплохо заработаем,<br> поднимая его на ваш на этаж!</p>
           <div class="service-image">
             <img src="img/service_car.png" alt="Доставка" width="468" height="261">
           </div>
         </div>
-        <div class="service-info service-2-info ">
+        <div class="service-info service-2-info hidden ">
           <h2>Гарантия</h2>
           <p>Если купленный у нас товар поломается или заискрит,<br>
            а также в случае пожара, спровоцированного его возгаранием,<br>
@@ -270,7 +258,7 @@
         <p>Настоящий мужской шоппинг начинается здесь!
         Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей
         сэкномить на гастарбайтерах.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
         Техномарт работает со многими транспортными компаниями:</p>
         <ul class="info-section-list">
           <li>Деловые линии</li>

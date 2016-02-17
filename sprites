@@ -1,0 +1,156 @@
+.sprites {
+    background-image: url("../img/sprites.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite--icon-basket {
+    width: 17px;
+    height: 16px;
+    background-position: -10px -10px;
+}
+
+.sprite--icon-bookmark {
+    width: 14px;
+    height: 16px;
+    background-position: -10px -46px;
+}
+
+.sprite--icon-check-off {
+    width: 23px;
+    height: 23px;
+    background-position: -10px -82px;
+}
+
+.sprite--icon-check-on {
+    width: 27px;
+    height: 23px;
+    background-position: -10px -125px;
+}
+
+.sprite--icon-circle {
+    width: 25px;
+    height: 25px;
+    background-position: -10px -168px;
+}
+
+.sprite--icon-circle-dot {
+    width: 25px;
+    height: 25px;
+    background-position: -10px -213px;
+}
+
+.sprite--icon-home {
+    width: 15px;
+    height: 12px;
+    background-position: -10px -258px;
+}
+
+.sprite--icon-login-blue {
+    width: 20px;
+    height: 17px;
+    background-position: -10px -290px;
+}
+
+.sprite--icon-login-grey {
+    width: 20px;
+    height: 17px;
+    background-position: -10px -327px;
+}
+
+.sprite--icon-narrow {
+    width: 22px;
+    height: 40px;
+    background-position: -10px -364px;
+}
+
+.sprite--icon-phone {
+    width: 19px;
+    height: 19px;
+    background-position: -10px -424px;
+}
+
+.sprite--icon-search-grey {
+    width: 17px;
+    height: 17px;
+    background-position: -10px -463px;
+}
+
+.sprite--icon-search-red {
+    width: 17px;
+    height: 17px;
+    background-position: -10px -500px;
+}
+
+.sprite--icon-search-white {
+    width: 17px;
+    height: 17px;
+    background-position: -10px -537px;
+}
+
+.sprite--icon-user-blue {
+    width: 20px;
+    height: 18px;
+    background-position: -10px -574px;
+}
+
+.sprite--icon-user-grey {
+    width: 20px;
+    height: 18px;
+    background-position: -10px -612px;
+}
+
+.sprite--social-facebook {
+    width: 10px;
+    height: 18px;
+    background-position: -10px -650px;
+}
+
+.sprite--social-instagramm {
+    width: 17px;
+    height: 17px;
+    background-position: -10px -688px;
+}
+
+.sprite--social-vk {
+    width: 20px;
+    height: 12px;
+    background-position: -10px -725px;
+}
+
+
+.sprite-offers {
+    background-image: url("../img/spritesheet-offers.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-offer-delivery {
+    width: 140px;
+    height: 123px;
+    background-position: -10px -10px;
+}
+
+.sprite-offer-discount {
+    width: 140px;
+    height: 123px;
+    background-position: -10px -153px;
+}
+
+.sprite-offer-instrument {
+    width: 140px;
+    height: 123px;
+    background-position: -10px -296px;
+}
+
+.sprite-offer-materials {
+    width: 140px;
+    height: 123px;
+    background-position: -10px -439px;
+}
+
+.sprite-offer-tech {
+    width: 140px;
+    height: 123px;
+    background-position: -10px -582px;
+}

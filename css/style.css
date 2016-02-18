@@ -700,7 +700,52 @@ p {
 }
 
 .catalog-actions {
+  position: absolute;
   display: none;
+  top: -1px;
+  left: 0;
+  width: 220px;
+  height: 170px;
+  padding-top: 44px;
+}
+
+.item-action {
+  display: block;
+  width: 112px;
+  margin: 0 auto;
+  padding: 10px 9px 9px 9px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-radius: 3px;
+}
+
+.item-action-buy {
+  position: relative;
+  border-bottom-color: #367315;
+  margin-bottom: 7px;
+}
+
+.item-action-buy::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  width: 17px;
+  height: 16px;
+  background: url("../img/sprites.png") no-repeat;
+  background-position: -10px -10px;
+  opacity: 0.3;
+}
+
+.item-action-bookmark {
+  color: #32425c;
+  background-color: #fff;
 }
 
 .catalog-item img {
@@ -1108,3 +1153,130 @@ p {
   line-height: 18px;
   color: #ffd180;
 }
+
+/*--Popup - write us form--*/
+
+.write-us-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  width: 620px;
+  height: 423px;
+  color: #000;
+  border-top: 7px solid #ee3643;
+  background-color: #fff;
+  box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+}
+
+.close-button {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.close-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: 5px;
+  height: 21px;
+  background-color: #ee3643;
+  transform: rotate(45deg);
+}
+
+.close-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 8px;
+  width: 5px;
+  height: 21px;
+  background-color: #ee3643;
+  transform: rotate(-45deg);
+}
+
+.write-us-container {
+  width: 460px;
+  margin: 0 auto 37px auto;
+}
+
+.write-us-inputs-left {
+  float: left;
+  width: 220px;
+  margin: 45px 0 19px 0;
+}
+
+.write-us-inputs-right {
+  float: right;
+  width: 220px;
+  margin: 45px 0 19px 0;
+}
+
+.write-us-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.write-us-form input {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 220px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-family: "PT Sans";
+  line-height: 18px;
+  color: #999;
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+}
+
+.write-us-form textarea {
+  clear: both;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 460px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-family: "PT Sans";
+  line-height: 18px;
+  color: #999;
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+}
+
+.write-us-section {
+  padding: 37px 0 37px 0;
+  background-color: #f1f1f1;
+}
+
+.write-us-btn {
+  width: 452px;
+  margin: 0 auto;
+  color: #fff;
+}
+/*-Popup map-*/
+
+.popup-map {
+  position: fixed;
+  display: none;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  width: 940px;
+  height: 450px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 16px 9px rgba(35, 31, 32, 0.5);
+  background:#e9e5dc url("../img/information_map_big.jpg") no-repeat;
+}
+

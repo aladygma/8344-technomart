@@ -328,28 +328,29 @@
   <!-- write-us form  -->
   <form class="write-us-form hidden" action="#" method="post">
     <i class="close-button">Закрыть</i>
-    <div class="write-us-top-section clearfix">
-    <!-- write-us-left-section -->
-      <div class="write-us-section-left">
-        <label for="id-name">Ваше имя:</label>
-        <input type="text" name="name" id="id-name" placeholder="Представьтесь, пожалуйста">
+    <div class="write-us-container clearfix">
+      <div class="write-us-inputs-left">
+        <label for="your-name">Ваше имя:</label>
+        <input type="text" name="your-name" id="id-your-name" placeholder="Представьтесь, пожалуйста">
       </div>
-      <!-- write-us-right-section -->
-      <div class="write-us-section-right">
-        <label for="id-email">Ваш e-mail:</label>
-        <input type="text" name="email" id="id-email" placeholder="Для отправки ответа">
+      <div class="write-us-inputs-right">
+        <label for="your-email">Ваш e-mail:</label>
+        <input type="text" name="your-email" id="id-your-email" placeholder="Для отправки ответа">
       </div>
-      <label for="id-email">Текст письма:</label>
-      <textarea class="write-us-message" name="message" id="id-message" cols="30" rows="10">Текст письма</textarea>
+      <label for="message">Текст письма:</label>
+      <textarea name="message" id="id-message" cols="30" rows="10">В свободной форме
+      </textarea>
     </div>
-    <div class="write-us-bottom-section">
-      <button class="btn write-us-send-button" type="submit">Отправить</button>
+    <div class="write-us-section">
+      <button class="btn write-us-btn" href="#">Отправить</button>
     </div>
   </form>
-  <!--  big map  -->
-  <div class="big-map hidden">
+  <!--  Popup map  -->
+  <div class="popup-map">
     <i class="close-button">Закрыть</i>
-    <img src="img/information_map_big.jpg" alt="Карта" width="940" height="446">
+    <div class="big-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2826.4228512996183!2d30.321970045070064!3d59.93906529517886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1455826397692" width="940" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
   </div>
 </body>
 </html>

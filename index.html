@@ -91,8 +91,31 @@
       <div class="offers-section clearfix">
       <!-- Slider -->
         <div class="slider">
-          <div class="slide">
-            <img src="img/slide_1.jpg" alt="Перфораторы" width="620" height="266">
+          <input type="radio" name="slides" id="id-slide-1" value="slide-1" checked>
+          <input type="radio" name="slides" id="id-slide-2" value="slide-2">
+          <i class="slider-arrow left"></i>
+          <i class="slider-arrow right"></i>
+          <div class="slider-controls">
+            <label for="id-slide-1"></label>
+            <label for="id-slide-2"></label>
+          </div>
+          <div class="slides">
+            <div class="slide">
+              <div class="slide-header">
+                <h2 class="slide-title">Перфораторы</h2>
+                <p class="slide-info">Настоящие мужские игрушки</p>
+              </div>
+              <img src="img/slide_1.jpg" alt="Слайд 1" width="620" height="266">
+              <a class="btn slide-btn" href="#">Открыть каталог</a>
+            </div>
+            <div class="slide">
+              <div class="slide-header">
+                <h2 class="slide-title">Дрели</h2>
+                <p class="slide-info">Соседям на радость!</p>
+              </div>
+              <img src="img/slide_2.jpg" alt="Слайд 2" width="620" height="266">
+              <a class="btn slide-btn" href="#">Открыть каталог</a>
+            </div>
           </div>
         </div>
         <!-- Offers-section-right -->
@@ -214,9 +237,9 @@
       <!-- Services-section -->
       <div class="services-section clearfix">
         <ul class="services-menu">
-          <li class="services-menu-item active" id="service-menu-item-1">Доставка</li>
-          <li class="services-menu-item" id="service-menu-item-2">Гарантия</li>
-          <li class="services-menu-item" id="service-menu-item-3">Кредит</li>
+          <li><label class="services-menu-item" id="service-menu-item-1">Доставка</label></li>
+          <li><label class="services-menu-item" id="service-menu-item-2">Гарантия</label></li>
+          <li><label class="services-menu-item" id="service-menu-item-3">Кредит</label></li>
         </ul>
         <div class="service-info service-1-info">
           <h2 class="service-info-title">Доставка</h2>

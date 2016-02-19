@@ -1090,6 +1090,10 @@ p {
   position: relative;
 }
 
+.services-section input[type="radio"] {
+  display: none;
+}
+
 .services-menu {
   position: relative;
   float: left;
@@ -1097,6 +1101,10 @@ p {
   padding: 0;
   width: 240px;
   list-style-type: none;
+}
+
+.services-menu li {
+  width: 100%;
 }
 
 .services-menu::after {
@@ -1111,6 +1119,7 @@ p {
 }
 
 .services-menu-item {
+  display: block;
   padding: 19px 20px 19px 22px;
   font-size: 21px;
   font-weight: bold;
@@ -1119,23 +1128,29 @@ p {
   background-color: #32425c;
   border-top: 1px solid #405069;
   border-bottom: 1px solid #293449;
+  cursor: pointer;
 }
 
 .services-menu-item:hover {
   background-color: #293449;
 }
 
-.services-menu-item.active {
+#id-service-1:checked ~ .services-menu label[for="id-service-1"],
+#id-service-2:checked ~ .services-menu label[for="id-service-2"],
+#id-service-3:checked ~ .services-menu label[for="id-service-3"] {
   color: #32425c;
   background-color: #fff;
   border-color: #fff;
 }
 
+#id-service-1:checked ~ .service-info.service-1-info,
+#id-service-2:checked ~ .service-info.service-2-info,
+#id-service-3:checked ~ .service-info.service-3-info {
+  display: block;
+}
 
 .service-info {
-  float: left;
-  width: 400px;
-}
+  display: none;-info .service-1-info}
 
 .service-info-title {
   padding: 0;

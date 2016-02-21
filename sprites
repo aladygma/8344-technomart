@@ -1,5 +1,5 @@
-.sprites {
-    background-image: url("../img/sprites.png");
+.sprite {
+    background-image: url(spritesheet.png);
     background-repeat: no-repeat;
     display: block;
 }
@@ -58,7 +58,7 @@
     background-position: -10px -327px;
 }
 
-.sprite--icon-arrow {
+.sprite--icon-narrow {
     width: 22px;
     height: 40px;
     background-position: -10px -364px;
@@ -118,39 +118,14 @@
     background-position: -10px -725px;
 }
 
-
-.sprite-offers {
-    background-image: url("../img/spritesheet-offers.png");
-    background-repeat: no-repeat;
-    display: block;
+.sprite--social-zy {
+    width: 21px;
+    height: 17px;
+    background-position: -10px -757px;
 }
 
-.sprite-offer-delivery {
-    width: 140px;
-    height: 123px;
-    background-position: -10px -10px;
-}
-
-.sprite-offer-discount {
-    width: 140px;
-    height: 123px;
-    background-position: -10px -153px;
-}
-
-.sprite-offer-instrument {
-    width: 140px;
-    height: 123px;
-    background-position: -10px -296px;
-}
-
-.sprite-offer-materials {
-    width: 140px;
-    height: 123px;
-    background-position: -10px -439px;
-}
-
-.sprite-offer-tech {
-    width: 140px;
-    height: 123px;
-    background-position: -10px -582px;
+.sprite--social-zyy {
+    width: 21px;
+    height: 17px;
+    background-position: -10px -794px;
 }

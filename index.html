@@ -16,7 +16,7 @@
       <div class="container clearfix">
       <!-- Top-section-left -->
         <div class="top-section-left clearfix">
-          <div class="logo top-logo">Техномарт</div>
+          <a class="logo top-logo logo-link-disabled" href="index.html">Техномарт</a>
             <form class="search-form" method="get" action="#">
               <input class="search-input" type="text" name="search" id="id-search" placeholder="Поиск:">
               <label class="search-label" for="id-search">Поиск</label>
@@ -93,14 +93,14 @@
           <div class="slider">
             <input type="radio" name="slides" id="id-slide-1" value="slide-1" checked>
             <input type="radio" name="slides" id="id-slide-2" value="slide-2">
-            <i class="slider-arrow left"></i>
-            <i class="slider-arrow right"></i>
+            <label class="slider-arrow arrow-left" for="id-slide-1"></label>
+            <label class="slider-arrow arrow-right" for="id-slide-2"></label>
             <div class="slider-controls">
               <label for="id-slide-1"></label>
               <label for="id-slide-2"></label>
             </div>
             <div class="slides">
-              <div class="slide">
+              <div class="slide slide-1 hidden">
                 <div class="slide-header">
                   <h2 class="slide-title">Перфораторы</h2>
                   <p class="slide-info">Настоящие мужские игрушки</p>
@@ -108,7 +108,7 @@
                 <img src="img/slide_1.jpg" alt="Слайд 1" width="620" height="266">
                 <a class="btn slide-btn" href="#">Открыть каталог</a>
               </div>
-              <div class="slide">
+              <div class="slide slide-2 hidden">
                 <div class="slide-header">
                   <h2 class="slide-title">Дрели</h2>
                   <p class="slide-info">Соседям на радость!</p>
@@ -154,8 +154,8 @@
                 <div class="catalog-item-image">
                   <img src="img/bfg9000_preview.jpg" alt="BFG 9000" width="218" height="170">
                 </div>
-                <span class="catalog-item-category">Перфоратор BOSCH</span>
-                <span class="catalog-item-model">BFG 9000</span>
+                <span class="catalog-item-category">Перфоратор BOSCH<br>
+                BFG 9000</span>
                 <span class="catalog-item-discount">32500 Р.</span>
                 <div class="catalog-item-price">25500 Р.</div>
               </li>
@@ -168,8 +168,8 @@
                 <div class="catalog-item-image">
                   <img src="img/bfg3000_preview.jpg" alt="BFG 3000"  width="218" height="170">
                 </div>
-                <span class="catalog-item-category">Перфоратор BOSCH</span>
-                <span class="catalog-item-model">BFG 3000</span>
+                <span class="catalog-item-category">Перфоратор BOSCH<br>
+                BFG 3000</span>
                 <span class="catalog-item-discount">22500 Р.</span>
                 <div class="catalog-item-price">15500 Р.</div>
               </li>
@@ -182,8 +182,8 @@
                 <div class="catalog-item-image">
                   <img src="img/bfg6000_preview.jpg" alt="BFG 6000" width="218" height="170" >
                 </div>
-                <span class="catalog-item-category">Перфоратор BOSCH</span>
-                <span class="catalog-item-model">BFG 6000</span>
+                <span class="catalog-item-category">Перфоратор BOSCH<br>
+                BFG 6000</span>
                 <span class="catalog-item-discount">30500 Р.</span>
                 <div class="catalog-item-price">25500 Р.</div>
               </li>
@@ -197,8 +197,8 @@
                 <div class="catalog-item-image">
                   <img src="img/bfg2000_preview.jpg" alt="BFG 2000"  width="218"  height="170">
                 </div>
-                <span class="catalog-item-category">Перфоратор BOSCH</span>
-                <span class="catalog-item-model">BFG 2000</span>
+                <span class="catalog-item-category">Перфоратор BOSCH<br>
+                BFG 2000</span>
                 <span class="catalog-item-discount">10500 Р.</span>
                 <div class="catalog-item-price">12500 Р.</div>
               </li>
@@ -266,7 +266,7 @@
             сгоревший товар на новый.<br>
              Дом уж восстановите как-нибудь сами.</p>
             <div class="service-image">
-              <img src="img/service_guarantee.png" alt="Гарантия" width="389"  height="283">
+              <img src="img/service_guarantee.png" alt="Гарантия" width="389"  height="261">
             </div>
           </div>
           <div class="service-info service-3-info hidden">
@@ -275,7 +275,7 @@
             Кредитные консультанты придут вам на помощь.</p>
             <a class="btn service-info-btn" href="#">Отправить заявку</a>
             <div class="service-image">
-              <img src="img/service_credit.png" alt="Кредит" width="465" height="285">
+              <img src="img/service_credit.png" alt="Кредит" width="465" height="261">
             </div>
           </div>
         </div>
@@ -306,8 +306,12 @@
           заехав в наш офис:</p>
           <div class="map-preview">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.2849443839336!2d30.32106132297037!3d59.93824860270217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sus!4v1456087288458" width="300" height="158" style="border:0" allowfullscreen></iframe>
+            <!-- Я не знаю как по другому -->
+            <!--проследить клик для Javascript -->
+            <!--поэтому сделал этот overlay -->
+            <div class="map-overlay"></div>
           </div>
-          <a class="btn info-section-right-btn" href="#">Заблудились? Напишите нам!</a>
+          <a class="btn info-section-right-btn show-write-us" href="#">Заблудились? Напишите нам!</a>
         </div>
       </div>
     </div>
@@ -316,7 +320,7 @@
       <div class="container clearfix">
       <!-- Footer-section-left  -->
         <div class="footer-section-left">
-          <div class="logo footer-logo">Техномарт</div>
+          <a class="logo footer-logo logo-link-disabled" href="index.html">Техномарт</a>
           <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           +7 (812) 555-05-55</p>
         </div>
@@ -359,7 +363,7 @@
     <!-- /////////////////////////////////////// -->
     <!-- write-us form  -->
     <form class="write-us-form hidden" action="#" method="post">
-      <i class="close-button">Закрыть</i>
+      <i class="close-button write-us-close">Закрыть</i>
       <div class="popup-container clearfix">
         <div class="write-us-inputs-left">
           <label for="id-your-name">Ваше имя:</label>
@@ -382,7 +386,7 @@
       <i class="close-button">Закрыть</i>
       <div class="cart-plus-section">
         <div class="popup-container">
-          <p class="cart-plus-salute">Товар добавлен в корзину</p>
+          <p class="cart-plus-salute">Товар добавлен в корзину!</p>
         </div>
       </div>
       <div class="cart-plus-section-bottom clearfix">
@@ -394,11 +398,53 @@
     </div>
     <!--  Popup map  -->
     <div class="popup-map hidden">
-      <i class="close-button">Закрыть</i>
+      <i class="close-button map-close">Закрыть</i>
       <div class="big-map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2826.4228512996183!2d30.321970045070064!3d59.93906529517886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1455826397692" width="940" height="450" style="border:0" allowfullscreen></iframe>
       </div>
     </div>
     <div class="overlay hidden"></div>
+    <!-- Javascript -->
+    <script>
+      var miniMap = document.querySelector(".map-overlay");
+      var popup = document.querySelector(".popup-map");
+      var overlay = document.querySelector(".overlay");
+      var mapClose = document.querySelector(".map-close");
+      var showWriteForm = document.querySelector(".show-write-us");
+      var popupWriteUs = document.querySelector(".write-us-form");
+      var writeUsClose = document.querySelector(".write-us-close");
+
+
+      miniMap.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("hidden");
+        overlay.classList.remove("hidden");
+      });
+
+      mapClose.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("hidden");
+        overlay.classList.add("hidden");
+      });
+
+      overlay.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("hidden");
+        overlay.classList.add("hidden");
+        popupWriteUs.classList.add("hidden");
+      });
+
+      showWriteForm.addEventListener("click", function(event) {
+        event.preventDefault();
+        popupWriteUs.classList.remove("hidden");
+        overlay.classList.remove("hidden");
+      });
+
+      writeUsClose.addEventListener("click", function(event) {
+        event.preventDefault();
+        popupWriteUs.classList.add("hidden");
+        overlay.classList.add("hidden");
+      });
+    </script>
   </body>
 </html>

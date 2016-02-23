@@ -121,6 +121,11 @@
     background-position: -10px -725px;
 }
 
+/*Я забыл эту иконку сразу добавить в спрайт*/
+/*И чтобы потом не менять все размеры*/
+/*добавил ее в конец спрайта*/
+/*поэтому у неё такое странное имя*/
+
 .sprite--social-zy {
     width: 21px;
     height: 17px;
@@ -270,6 +275,10 @@ p {
   background-color: #ba2732;
 }
 
+.logo-link-disabled:hover {
+  cursor: default;
+}
+
 .search-form {
   position: relative;
   float: left;
@@ -343,11 +352,15 @@ p {
 }
 
 .top-section-btn {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   position: relative;
   display: block;
   float: left;
-  width: 122px;
-  padding: 12px 28px 12px 0;
+  width: 150px;
+  height: 42px;
+  padding: 12px 28px 0 0;
   font-size: 17px;
   line-height: 18px;
   text-align: right;
@@ -386,8 +399,8 @@ p {
 }
 
 .order-btn {
-  width: 126px;
-  padding: 12px;
+  width: 150px;
+  padding: 12px 12px 0 12px;
   text-align: center;
   background-color: #63a63e;
 }
@@ -497,6 +510,9 @@ p {
   width: 213px;
   padding: 12px 0 12px 46px;
   text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .user-in::before {
@@ -555,13 +571,13 @@ p {
   padding: 0;
   text-align: left;
   line-height: 0;
-  list-style-type: none;
+  list-style: none;
 }
 
 .user-pages li {
   margin: 0;
   padding: 0;
-  display: inline;
+  display: inline-block;
 }
 
 .user-pages a {
@@ -638,9 +654,10 @@ p {
   margin: 0;
   padding: 0;
   background-color: #32425c;
-  list-style-type: none;
+  list-style: none;
   text-align: center;
   font-size: 0;
+  border-bottom: 5px solid #293449;
 }
 
 .navigation li {
@@ -656,7 +673,6 @@ p {
   text-decoration: none;
   color: #ffffff;
   background-color: #32425c;
-  border-bottom: 5px solid #293449;
 }
 
 .navigation a:hover {
@@ -666,7 +682,7 @@ p {
 .navigation a:active {
   color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
-  border-color: #1d2739;
+  box-shadow: 0 5px 0 0 #1d2739;
 }
 
 .navigation li:last-child a {
@@ -706,7 +722,7 @@ p {
   color: #000;
   font-size: 13px;
   line-height: 18px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Verdana, sans-serif;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -789,7 +805,7 @@ p {
 
 .filter-header-title {
   float: left;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Verdana, sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -809,7 +825,7 @@ p {
 
 .filter-section-title {
   margin-bottom: 14px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Verdana, sans-serif;
   font-size: 17px;
   font-weight: bold;
   line-height: 30px;
@@ -912,7 +928,7 @@ p {
 .filter-list {
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  list-style: none;
 
 }
 
@@ -929,7 +945,7 @@ p {
   padding-left: 35px;
   font-size: 15px;
   line-height: 20px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Verdana, sans-serif;
   text-transform: uppercase;
   color: #000;
 }
@@ -975,7 +991,7 @@ p {
   padding-left: 35px;
   font-size: 15px;
   line-height: 20px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Verdana, sans-serif;
   text-transform: uppercase;
   color: #000;
 }
@@ -1008,7 +1024,7 @@ p {
 
 .filter-submit {
   padding: 9px 39px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Verdana, sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1025,7 +1041,7 @@ p {
   padding: 10px 14px;
   font-size: 13px;
   line-height: 18px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Verdana, sans-serif;
   text-transform: uppercase;
   background-color: #f7f3ec;
   border-radius: 4px;
@@ -1048,7 +1064,7 @@ p {
   display: block;
   font-size: 13px;
   line-height: 17px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Verdana, sans-serif;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #ee3643;
@@ -1189,11 +1205,15 @@ p {
 }
 
 .offer-title {
+  width: 138px;
   margin: 0 0 15px 0;
   padding: 0;
   font-size: 24px;
   font-weight: bold;
   line-height: 24px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   color: #fff;
 }
 
@@ -1235,16 +1255,6 @@ p {
   display: none;
 }
 
-.slider label {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  background-color: #fff;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
 .slide {
   display: none;
 }
@@ -1260,24 +1270,13 @@ p {
   cursor: pointer;
 }
 
-.slider-arrow.left {
+.arrow-left {
   left: 25px;
   transform: scale(-1, 1);
 }
 
-.slider-arrow.right {
+.arrow-right {
   right: 20px;
-}
-
-.slider-controls {
-  position: absolute;
-  left: 50%;
-  bottom: 35px;
-  z-index: 50;
-  transform: translateX(-50%);
-  width: 140px;
-  font-size: 30px;
-  text-align: center;
 }
 
 .slide-header {
@@ -1303,7 +1302,7 @@ p {
   padding: 0;
   font-size: 18px;
   line-height: 24px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Verdana, sans-serif;
   color: #fff;
 }
 
@@ -1322,6 +1321,27 @@ p {
   bottom: 21px;
   left: 26px;
   width: 175px;
+}
+
+.slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 29px;
+  z-index: 60;
+  transform: translateX(-50%);
+  width: 140px;
+  text-align: center;
+}
+
+.slider-controls label {
+  display: inline-block;
+  margin-right: 5px;
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 #id-slide-1:checked ~ .slider-controls label[for="id-slide-1"],
@@ -1371,13 +1391,14 @@ p {
   margin: 0;
   padding: 0;
   font-size: 0;
-  list-style-type: none;
+  list-style: none;
 }
 
 .catalog-item {
   position: relative;
   display: inline-block;
   width: 218px;
+  min-height: 317px;
   margin: 0 0 21px 20px;
   border: 1px solid #e5e5e5;
   font-family: "PT Sans" , Verdana, sans-serif;
@@ -1450,9 +1471,9 @@ p {
   height: 170px;
 }
 
-.catalog-item-category,
- .catalog-item-model {
+.catalog-item-category  {
   display: block;
+  margin-bottom: 11px;
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
@@ -1463,7 +1484,7 @@ p {
 }
 
 .catalog-item-model {
-  margin-bottom: 11px;
+
 }
 
 .catalog-item-discount {
@@ -1546,7 +1567,7 @@ p {
 .index-popular-brands {
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  list-style: none;
   font-size: 0;
   margin-bottom: 65px;
 }
@@ -1558,6 +1579,10 @@ p {
   height: 143px;
   margin: 0 0 20px 20px;
   border: 1px solid #e5e5e5;
+}
+
+.brand {
+  display: block;
 }
 
 .index-popular-brands img {
@@ -1581,8 +1606,9 @@ p {
 /*============*/
 
 .services {
+  min-height: 458px;
   margin-bottom: 80px;
-  padding: 64px 0 102px 0;
+  padding: 64px 0 0 0;
   background-color: #f2f6f8;
 }
 
@@ -1618,7 +1644,7 @@ p {
   margin: 0 80px 0 0;
   padding: 0;
   width: 240px;
-  list-style-type: none;
+  list-style: none;
 }
 
 .services-menu li {
@@ -1687,6 +1713,8 @@ p {
   position: absolute;
   top: 0;
   right: 0;
+  height: 261px;
+  overflow: hidden;
 }
 
 .service-info-btn {
@@ -1707,7 +1735,7 @@ p {
 .about-something-info {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Verdana, sans-serif;
   line-height: 22px;
 }
 
@@ -1718,7 +1746,7 @@ p {
 .pagination {
   margin: 0;
   padding: 24px 0 0 0;
-  list-style-type: none;
+  list-style: none;
   font-size: 0;
 }
 
@@ -1733,7 +1761,7 @@ p {
   padding: 12px 14px;
   font-size: 13px;
   line-height: 14px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Verdana, sans-serif;
   text-align: center;
   color: #000;
   background-color: #fff;
@@ -1809,7 +1837,7 @@ p {
   margin: 0;
   padding: 0;
   float: left;
-  list-style-type: none;
+  list-style: none;
 }
 
 .info-section-list li {
@@ -1846,10 +1874,21 @@ p {
 }
 
 .map-preview {
+  position: relative;
   margin-bottom: 46px;
   width: 300px;
   height: 158px;
   background: url("../img/map_preview.jpg") no-repeat;
+}
+
+.map-overlay {
+  position: absolute;
+  width: 300px;
+  height: 158px;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
 }
 
 /*==========*/
@@ -1894,17 +1933,19 @@ p {
   margin: 36px 0 0 0;
   padding: 0;
   font-size: 0;
-  list-style-type: none;
-  text-align: right;
+  list-style: none;
 }
 
 .footer-menu li {
   display: inline-block;
   vertical-align: top;
+}
+
+.footer-menu-1 li {
   margin-left: 59px;
 }
 
-.footer-menu li:first-child {
+.footer-menu-1 li:first-child {
   margin-left: 0;
 }
 
@@ -1912,6 +1953,14 @@ p {
   display: block;
   font-size: 18px;
   line-height: 24px;
+}
+
+.footer-menu-2 li {
+  margin-left: 64px;
+}
+
+.footer-menu-2 li:first-child {
+  margin-left: 10px;
 }
 
 .footer-menu-2 a {
@@ -2000,12 +2049,11 @@ p {
 
 .bottom-contacts {
   float: right;
-  width: 300px;
 }
 
 .bottom-contacts-section {
   float: left;
-  width: 150px;
+  min-width: 150px;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -2019,7 +2067,7 @@ p {
 }
 
 .bottom-contacts-section.design-by {
-  width: 110px;
+  min-width: 110px;
   padding: 0 0 0 20px;
 }
 
@@ -2064,6 +2112,11 @@ p {
   height: 21px;
   font-size: 0;
   cursor: pointer;
+}
+
+.map-close {
+  top: -11px;
+  right: -11px;
 }
 
 .close-button:before {
@@ -2119,11 +2172,12 @@ p {
   width: 220px;
   padding: 8px 14px;
   font-size: 13px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Verdana, sans-serif;
   line-height: 18px;
   color: #999;
   border: 2px solid #d7dcde;
   border-radius: 2px;
+  outline: 0;
 }
 
 .write-us-form textarea {
@@ -2134,11 +2188,12 @@ p {
   width: 460px;
   padding: 8px 14px;
   font-size: 13px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Verdana, sans-serif;
   line-height: 18px;
   color: #999;
   border: 2px solid #d7dcde;
   border-radius: 2px;
+  outline: 0;
 }
 
 .write-us-section {
@@ -2150,6 +2205,7 @@ p {
   width: 452px;
   margin: 0 auto;
   color: #fff;
+  outline: 0;
 }
 
 /*=============*/
